@@ -16,6 +16,6 @@ This repository contains the code for an online experiment studying human cooper
 
 ## Introduction
 
-This experiment investigates how communication and the perceived identity of an associate (human vs. bot) affect cooperative behavior in an iterative Prisoner's Dilemma game. Participants play multiple rounds against a bot implementing the Tit-for-Tat strategy, with some participants able to communicate with the bot through pre-defined messages.
+This experiment investigates how communication affects cooperative behavior in an iterative Prisoner's Dilemma game. Participants play 30 rounds against a bot implementing the Tit-for-Tat strategy, with some participants able to communicate with the bot through pre-defined messages.
 
 ---
