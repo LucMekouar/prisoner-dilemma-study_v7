@@ -83,7 +83,7 @@ consent_promise = loadHTML('resources/consent_form.html').then(function(content)
     type: 'instructions',
     pages: [
       'Welcome to our study, titled "Playing a Cooperation/Defection Game with a Partner Online".',
-      'In this experiment, you will be playing a game where you can choose to cooperate (A) or defect (B) in each round.',
+      'In this study, you will be playing a game where you can choose to cooperate (A) or defect (B) in each round.',
       'You will receive in-game fictional rewards, depending on your decision and the decision made by your partner.',
       `
         <p>For example, if both you and your partner decide to cooperate (A), you will both receive a reward of 3 units shown as (3,3). If you both decide to defect (B), then you will both receive a reward of 1 unit shown as (1,1). However, if one cooperates (A) and the other defects (B), the one who defects gets a reward of 5 units, and the one who cooperates gets no reward.<p>
