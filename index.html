@@ -1,0 +1,40 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Prisoner's Dilemma Experiment</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Include jsPsych CSS -->
+  <link rel="stylesheet" href="js/jspsych/css/jspsych.css">
+</head>
+<body>
+  <div id="jspsych-target"></div>
+  <div id="total-payoff" style="display: none;">Total Payoff: 0</div>
+
+  <!-- Include jsPsych library and plugins -->
+  <script src="js/jspsych/jspsych.js"></script>
+  <script src="js/jspsych/plugins/jspsych-html-button-response.js"></script>
+  <script src="js/jspsych/plugins/jspsych-survey-html-form.js"></script>
+  <script src="js/jspsych/plugins/jspsych-instructions.js"></script>
+  <script src="js/jspsych/plugins/jspsych-call-function.js"></script>
+
+    <!-- Include jQuery (required by jspsych-pavlovia plugin) -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+    <!-- Include the jspsych-pavlovia plugin -->
+    <script src="https://lib.pavlovia.org/jspsych-pavlovia-2020.2.js"></script>
+
+  <!-- Include your custom JavaScript files in the correct order -->
+  <script src="js/utils.js"></script>
+  <script src="js/bot_strategy.js"></script>
+  <script src="js/communication.js"></script>
+  <script src="js/group_assignment.js"></script> 
+  <script src="js/instructions.js"></script>
+  <script src="js/experiment.js"></script>
+  <script src="js/practice.js"></script>
+  <script src="js/debrief.js"></script> 
+  <script src="js/main.js"></script>
+</body>
+</html>
