@@ -21,7 +21,7 @@ This experiment investigates how communication affects cooperative behavior in a
 - `js/debrief.js`: Handles the loading and presentation of the debriefing form at the end of the experiment.
 - `js/bot_strategy.js`: Defines the bot's strategy, implementing a Tit-for-Tat approach for the game.
 - `js/communication.js`: Contains the predefined messages for communication and the bot's responses.
-- `js/group_assignment.js`: Assigns participants to experimental groups (e.g., communication or no communication conditions).
+- `js/group_assignment.js`: Assigns participants to experimental groups (i.e. communication or no communication conditions).
 - `js/utils.js`: Contains utility functions used across the experiment scripts.
 - `resources`: Folder containing the participant information form and the debrief form.
 - `css/style.css`: Contains the styles for the experiment.
