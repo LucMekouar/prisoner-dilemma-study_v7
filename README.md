@@ -1,6 +1,6 @@
 ## This Repository
 
-This repository contains the code for an online experiment studying human cooperative behavior in human-machine interactions using the iterative Prisoner's Dilemma game. The experiment is built using **jsPsych** and runs in participants' web browsers, hosted on Pavlovia.
+This repository contains the code and data for an online experiment studying human cooperative behavior in human-machine interactions using the iterative Prisoner's Dilemma game. The experiment is built using **jsPsych** and runs in participants' web browsers, hosted on Pavlovia.
 
 ---
 
