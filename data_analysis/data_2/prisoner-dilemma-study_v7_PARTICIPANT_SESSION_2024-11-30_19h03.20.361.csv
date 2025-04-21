@@ -1,0 +1,4479 @@
+"trial_type","trial_index","time_elapsed","internal_node_id","group","round_payoff_matrix","rt","stimulus","button_pressed","consent","responses","age","gender","gender_other","view_history","selected_question","bot_response","round","isPractice","phase","participant_move","bot_move","participant_payoff","bot_payoff","value","matrix_number"
+"pavlovia","0","617","0.0-0.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","","","","","","","","","","",""
+"html-button-response","1","13602","0.0-1.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","12982","<!-- resources/consent_form.html -->
+
+<h2>Consent Form</h2>
+<p><strong>Department of Psychology, University of Warwick</strong></p>
+
+<p><strong>Study title:</strong> Playing a Cooperation/Defection game with a Partner Online<br>
+<strong>Name of Researcher:</strong> Luc Mekouar<br>
+<strong>Name of Supervisor:</strong> Dr. Maria Robinson</p>
+
+<p>Welcome and thank you for your interest in this research study! This research study is on understanding human cooperation in a digital setting. You will be asked to play the game of prisoner’s dilemma with a provided partner over multiple rounds. The rules will be clearly stated before the game begins, and you will have the opportunity to practice.</p>
+
+<p><strong>You must be over the age of 18 to take part.</strong></p>
+
+<p>You will also be asked to report demographic information (gender and age) to allow us to understand our sample better and determine the generalizability of the findings.</p>
+
+<p>The experiment should take about 15 minutes to complete. You will be playing with a partner multiple rounds. Each round, you and your partner each will be able to either cooperate or defect, after which you and your partner will receive in-game reward (fictional), where the amount depends on both you and your partner’s decision in that round.</p>
+
+<p>At the end of the survey, you will have the option to enter a prize draw to win an amazon voucher worth £20. Please note that to enter the draw you must provide your email address. However, please note that this information will not be connected to your study responses. The prize draw will take place on the 24th of February, after which your email will be deleted.</p>
+
+<p>This study is being conducted as part of my 3rd year project at the University of Warwick and is not funded by an external body.</p>
+
+<p>Your participation is completely voluntary. You can withdraw at any time, and for any reason, simply by closing your browser.</p>
+
+<p>No identifiable data will be collected from you as part of this study. This means that once your responses have been submitted to the research team, it will not be possible to withdraw this data as your individual responses cannot be identified.</p>
+
+<p>Data will be securely stored on University of Warwick secure storage and will be processed only for the purpose of scientific analysis. Access to the data will be restricted to the investigators listed above. Data will be reviewed on completion of the research, in line with the University of Warwick data retention policy.</p>
+
+<p>Please refer to the University of Warwick Research Privacy Notice which is available here: <a href=""https://warwick.ac.uk/services/idc/dataprotection/privacynotices/researchprivacynotice"">Research Privacy Notice</a> or by contacting the Information and Data Compliance Team at <a href=""mailto:infocompliance@warwick.ac.uk"">infocompliance@warwick.ac.uk</a>.</p>
+
+<p>This study has been reviewed and given a favourable opinion by the University of Warwick’s Department of Psychology Research Ethics Committee.</p>
+
+<h3>Additional Support</h3>
+<p>If you require further information, please contact Luc Mekouar at <a href=""mailto:luc.mekouar@warwick.ac.uk"">luc.mekouar@warwick.ac.uk</a> or their academic supervisor Dr. Maria Robinson at <a href=""mailto:maria.robinson@warwick.ac.uk"">maria.robinson@warwick.ac.uk</a>.</p>
+
+<h3>Who should I contact if I wish to make a complaint?</h3>
+<p>Any complaint should be addressed to the person below, who is the supervisor of this study:</p>
+<p><strong>Supervisor’s name:</strong> Dr. Maria Robinson<br>
+<strong>Address:</strong> Department of Psychology, University of Warwick, Coventry, CV4 7AL<br>
+<strong>Email:</strong> <a href=""mailto:maria.robinson@warwick.ac.uk"">maria.robinson@warwick.ac.uk</a></p>
+
+<p>If you wish to raise a complaint about how we have handled your personal data, you can contact our Data Protection Officer who will investigate the matter: <a href=""mailto:DPO@warwick.ac.uk"">DPO@warwick.ac.uk</a>.</p>
+
+<p>If you are not satisfied with our response or believe we are processing your personal data in a way that is not lawful, you can complain to the Information Commissioner’s Office (ICO).</p>
+
+<p>Thank you for taking the time to read this Participant Information Leaflet.</p>
+
+<p>I have read the above and … </p>
+","0","true","","","","","","","","","","","","","","","",""
+"survey-html-form","2","26589","0.0-2.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","12982.999999999998","","","","{""age"":""21"",""gender"":""Female"",""gender_other"":""""}","21","Female","null","","","","","","","","","","","",""
+"instructions","3","296921","0.0-3.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","270330","","","","","","","","[{""page_index"":0,""viewing_time"":8006},{""page_index"":1,""viewing_time"":5101},{""page_index"":2,""viewing_time"":17889},{""page_index"":3,""viewing_time"":223680},{""page_index"":4,""viewing_time"":3050},{""page_index"":5,""viewing_time"":4167},{""page_index"":6,""viewing_time"":2567},{""page_index"":7,""viewing_time"":4034},{""page_index"":8,""viewing_time"":1835}]","","","","","","","","","","",""
+"html-button-response","4","310824","0.0-4.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","Hello, how are you?","I am alright, thank you.","1","true","practice","","","","","",""
+"html-button-response","4","310825","0.0-4.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","","","1","true","practice","","","","","",""
+"decision","5","320443","0.0-5.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","9616","
+          <p>Practice 1: Decision Phase</p>
+          <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+          <p>Choose your action:</p>
+          
+          <table class=""payoff-matrix"">
+            <tr>
+              <th rowspan=""2"">Your Choice</th>
+              <th colspan=""2"">Partner's Choice</th>
+            </tr>
+            <tr>
+              <th>A</th>
+              <th>B</th>
+            </tr>
+            <tr>
+              <th>A</th>
+              <td>(3,3)</td>
+              <td>(0,5)</td>
+            </tr>
+            <tr>
+              <th>B</th>
+              <td>(5,0)</td>
+              <td>(1,1)</td>
+            </tr>
+          </table>
+        
+        ","0","","","","","","","","","1","true","practice","A","A","3","3","",""
+"html-button-response","6","326959","0.0-6.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","6512","
+          <p>Results of Practice 1:</p>
+          <p>You chose: A</p>
+          <p>Your partner chose: A</p>
+          
+    <table class=""payoff-matrix"">
+      <tr>
+        <th rowspan=""2"">Your Choice</th>
+        <th colspan=""2"">Partner's Choice</th>
+      </tr>
+      <tr>
+        <th>A</th>
+        <th>B</th>
+      </tr>
+      <tr>
+        <th>A</th>
+        <td id=""cell-AA"">(3,3)</td>
+        <td id=""cell-AB"">(0,5)</td>
+      </tr>
+      <tr>
+        <th>B</th>
+        <td id=""cell-BA"">(5,0)</td>
+        <td id=""cell-BB"">(1,1)</td>
+      </tr>
+    </table>
+    <style>
+      #cell-AA {
+        background-color: yellow;
+      }
+    </style>
+  
+          <p>Your payoff this round: <strong>3</strong></p>
+          <p>Practice rounds do not count towards your total fictional payoff.</p>
+        ","0","","","","","","","","","1","true","practice","","","","","",""
+"html-button-response","7","341664","0.0-7.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","Testing communication: Do you receive?","Yes I do.","2","true","practice","","","","","",""
+"html-button-response","7","341664","0.0-7.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","","","2","true","practice","","","","","",""
+"decision","8","346331","0.0-8.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","4666","
+          <p>Practice 2: Decision Phase</p>
+          <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+          <p>Choose your action:</p>
+          
+          <table class=""payoff-matrix"">
+            <tr>
+              <th rowspan=""2"">Your Choice</th>
+              <th colspan=""2"">Partner's Choice</th>
+            </tr>
+            <tr>
+              <th>A</th>
+              <th>B</th>
+            </tr>
+            <tr>
+              <th>A</th>
+              <td>(3,3)</td>
+              <td>(0,5)</td>
+            </tr>
+            <tr>
+              <th>B</th>
+              <td>(5,0)</td>
+              <td>(1,1)</td>
+            </tr>
+          </table>
+        
+        ","0","","","","","","","","","2","true","practice","A","A","3","3","",""
+"html-button-response","9","352249","0.0-9.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","5915","
+          <p>Results of Practice 2:</p>
+          <p>You chose: A</p>
+          <p>Your partner chose: A</p>
+          
+    <table class=""payoff-matrix"">
+      <tr>
+        <th rowspan=""2"">Your Choice</th>
+        <th colspan=""2"">Partner's Choice</th>
+      </tr>
+      <tr>
+        <th>A</th>
+        <th>B</th>
+      </tr>
+      <tr>
+        <th>A</th>
+        <td id=""cell-AA"">(3,3)</td>
+        <td id=""cell-AB"">(0,5)</td>
+      </tr>
+      <tr>
+        <th>B</th>
+        <td id=""cell-BA"">(5,0)</td>
+        <td id=""cell-BB"">(1,1)</td>
+      </tr>
+    </table>
+    <style>
+      #cell-AA {
+        background-color: yellow;
+      }
+    </style>
+  
+          <p>Your payoff this round: <strong>3</strong></p>
+          <p>Practice rounds do not count towards your total fictional payoff.</p>
+        ","0","","","","","","","","","2","true","practice","","","","","",""
+"html-button-response","10","362718","0.0-10.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","I am ready to start the experiment.","So am I, let's get started.","3","true","practice","","","","","",""
+"html-button-response","10","362718","0.0-10.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","","","3","true","practice","","","","","",""
+"decision","11","364733","0.0-11.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","2012","
+          <p>Practice 3: Decision Phase</p>
+          <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+          <p>Choose your action:</p>
+          
+          <table class=""payoff-matrix"">
+            <tr>
+              <th rowspan=""2"">Your Choice</th>
+              <th colspan=""2"">Partner's Choice</th>
+            </tr>
+            <tr>
+              <th>A</th>
+              <th>B</th>
+            </tr>
+            <tr>
+              <th>A</th>
+              <td>(3,3)</td>
+              <td>(0,5)</td>
+            </tr>
+            <tr>
+              <th>B</th>
+              <td>(5,0)</td>
+              <td>(1,1)</td>
+            </tr>
+          </table>
+        
+        ","1","","","","","","","","","3","true","practice","B","A","5","0","",""
+"html-button-response","12","369202","0.0-12.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","4467","
+          <p>Results of Practice 3:</p>
+          <p>You chose: B</p>
+          <p>Your partner chose: A</p>
+          
+    <table class=""payoff-matrix"">
+      <tr>
+        <th rowspan=""2"">Your Choice</th>
+        <th colspan=""2"">Partner's Choice</th>
+      </tr>
+      <tr>
+        <th>A</th>
+        <th>B</th>
+      </tr>
+      <tr>
+        <th>A</th>
+        <td id=""cell-AA"">(3,3)</td>
+        <td id=""cell-AB"">(0,5)</td>
+      </tr>
+      <tr>
+        <th>B</th>
+        <td id=""cell-BA"">(5,0)</td>
+        <td id=""cell-BB"">(1,1)</td>
+      </tr>
+    </table>
+    <style>
+      #cell-BA {
+        background-color: yellow;
+      }
+    </style>
+  
+          <p>Your payoff this round: <strong>5</strong></p>
+          <p>Practice rounds do not count towards your total fictional payoff.</p>
+        ","0","","","","","","","","","3","true","practice","","","","","",""
+"html-button-response","13","373520","0.0-13.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","4315","<p>You have completed the practice rounds. When you are ready, press the button below to start the main experiment.</p>","0","","","","","","","","","","","","","","","","",""
+"call-function","14","373521","0.0-14.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","","","","","","","","","","",""
+"communication","15","392241","0.0-15.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","What strategy should we use?","Cooperation is better for the two of us.","1","false","experiment","","","","","","4"
+"decision","16","393742","0.0-16.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1497","
+                  <p>Round 1: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              
+              ","0","","","","","","","","","1","false","experiment","A","B","0","5","","4"
+"feedback","17","396892","0.0-17.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","3147","
+                <p>Results of Round 1:</p>
+                <p>You chose: A</p>
+                <p>Your partner chose: B</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(3,3)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(2,2)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-AB {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>0</strong></p>
+                <p>Your total payoff: 0</p>
+            ","0","","","","","","","","","1","false","experiment","","","","","","4"
+"communication","18","411278","0.0-18.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","There is no point in cooperating!","I disagree, I think we should cooperate.","2","false","experiment","","","","","","4"
+"decision","19","412646","0.0-19.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1365","
+                  <p>Round 2: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              
+              ","1","","","","","","","","","2","false","experiment","B","A","5","0","","4"
+"feedback","20","417013","0.0-20.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","4364","
+                <p>Results of Round 2:</p>
+                <p>You chose: B</p>
+                <p>Your partner chose: A</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(3,3)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(2,2)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-BA {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>5</strong></p>
+                <p>Your total payoff: 5</p>
+            ","0","","","","","","","","","2","false","experiment","","","","","","4"
+"communication","21","427981","0.0-21.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","Let's cooperate!","Yes, this is mutually beneficial.","3","false","experiment","","","","","","3"
+"decision","22","429299","0.0-22.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1316","
+                  <p>Round 3: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,4)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(4,0)</td>
+                      <td>(1,1)</td>
+                    </tr>
+                  </table>
+              
+              ","0","","","","","","","","","3","false","experiment","A","B","0","4","","3"
+"feedback","23","434184","0.0-23.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","4878","
+                <p>Results of Round 3:</p>
+                <p>You chose: A</p>
+                <p>Your partner chose: B</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(3,3)</td>
+          <td id=""cell-AB"">(0,4)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(4,0)</td>
+          <td id=""cell-BB"">(1,1)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-AB {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>0</strong></p>
+                <p>Your total payoff: 5</p>
+            ","0","","","","","","","","","3","false","experiment","","","","","","3"
+"communication","24","440984","0.0-24.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","Let's cooperate!","Yes, we have more to gain together.","4","false","experiment","","","","","","2"
+"decision","25","442019","0.0-25.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1032","
+                  <p>Round 4: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(4,4)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(1,1)</td>
+                    </tr>
+                  </table>
+              
+              ","1","","","","","","","","","4","false","experiment","B","A","5","0","","2"
+"feedback","26","444402","0.0-26.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","2381","
+                <p>Results of Round 4:</p>
+                <p>You chose: B</p>
+                <p>Your partner chose: A</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(4,4)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(1,1)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-BA {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>5</strong></p>
+                <p>Your total payoff: 10</p>
+            ","0","","","","","","","","","4","false","experiment","","","","","","2"
+"communication","27","457722","0.0-27.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","Let's cooperate!","Yes, we have more to gain together.","5","false","experiment","","","","","","1"
+"decision","28","459206","0.0-28.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1481","
+                  <p>Round 5: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(1,1)</td>
+                    </tr>
+                  </table>
+              
+              ","0","","","","","","","","","5","false","experiment","A","B","0","5","","1"
+"feedback","29","461039","0.0-29.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1831","
+                <p>Results of Round 5:</p>
+                <p>You chose: A</p>
+                <p>Your partner chose: B</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(3,3)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(1,1)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-AB {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>0</strong></p>
+                <p>Your total payoff: 10</p>
+            ","0","","","","","","","","","5","false","experiment","","","","","","1"
+"communication","30","470158","0.0-30.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","Let's cooperate!","Yes, this is mutually beneficial.","6","false","experiment","","","","","","2"
+"decision","31","471275","0.0-31.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1116","
+                  <p>Round 6: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(4,4)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(1,1)</td>
+                    </tr>
+                  </table>
+              
+              ","1","","","","","","","","","6","false","experiment","B","A","5","0","","2"
+"feedback","32","477026","0.0-32.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","5749","
+                <p>Results of Round 6:</p>
+                <p>You chose: B</p>
+                <p>Your partner chose: A</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(4,4)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(1,1)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-BA {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>5</strong></p>
+                <p>Your total payoff: 15</p>
+            ","0","","","","","","","","","6","false","experiment","","","","","","2"
+"communication","33","486828","0.0-33.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","Let's cooperate!","Yes, we have more to gain together.","7","false","experiment","","","","","","4"
+"decision","34","490362","0.0-34.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","3528","
+                  <p>Round 7: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              
+              ","0","","","","","","","","","7","false","experiment","A","B","0","5","","4"
+"feedback","35","493963","0.0-35.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","3598","
+                <p>Results of Round 7:</p>
+                <p>You chose: A</p>
+                <p>Your partner chose: B</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(3,3)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(2,2)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-AB {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>0</strong></p>
+                <p>Your total payoff: 15</p>
+            ","0","","","","","","","","","7","false","experiment","","","","","","4"
+"communication","36","500564","0.0-36.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","Let's cooperate!","Yes, this is mutually beneficial.","8","false","experiment","","","","","","2"
+"decision","37","501965","0.0-37.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1399","
+                  <p>Round 8: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(4,4)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(1,1)</td>
+                    </tr>
+                  </table>
+              
+              ","1","","","","","","","","","8","false","experiment","B","A","5","0","","2"
+"feedback","38","503399","0.0-38.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1431","
+                <p>Results of Round 8:</p>
+                <p>You chose: B</p>
+                <p>Your partner chose: A</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(4,4)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(1,1)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-BA {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>5</strong></p>
+                <p>Your total payoff: 20</p>
+            ","0","","","","","","","","","8","false","experiment","","","","","","2"
+"communication","39","513236","0.0-39.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","I do not know if I should cooperate as I do not know if you will cooperate.","I think we should cooperate.","9","false","experiment","","","","","","3"
+"decision","40","516652","0.0-40.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","3414","
+                  <p>Round 9: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,4)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(4,0)</td>
+                      <td>(1,1)</td>
+                    </tr>
+                  </table>
+              
+              ","1","","","","","","","","","9","false","experiment","B","B","1","1","","3"
+"feedback","41","521653","0.0-41.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","4998","
+                <p>Results of Round 9:</p>
+                <p>You chose: B</p>
+                <p>Your partner chose: B</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(3,3)</td>
+          <td id=""cell-AB"">(0,4)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(4,0)</td>
+          <td id=""cell-BB"">(1,1)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-BB {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>1</strong></p>
+                <p>Your total payoff: 21</p>
+            ","0","","","","","","","","","9","false","experiment","","","","","","3"
+"communication","42","530437","0.0-42.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","Let's cooperate!","Yes, this is mutually beneficial.","10","false","experiment","","","","","","3"
+"decision","43","531738","0.0-43.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1299","
+                  <p>Round 10: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,4)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(4,0)</td>
+                      <td>(1,1)</td>
+                    </tr>
+                  </table>
+              
+              ","1","","","","","","","","","10","false","experiment","B","B","1","1","","3"
+"feedback","44","535355","0.0-44.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","3615","
+                <p>Results of Round 10:</p>
+                <p>You chose: B</p>
+                <p>Your partner chose: B</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(3,3)</td>
+          <td id=""cell-AB"">(0,4)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(4,0)</td>
+          <td id=""cell-BB"">(1,1)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-BB {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>1</strong></p>
+                <p>Your total payoff: 22</p>
+            ","0","","","","","","","","","10","false","experiment","","","","","","3"
+"communication","45","541806","0.0-45.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","Let's cooperate!","Yes, we have more to gain together.","11","false","experiment","","","","","","1"
+"decision","46","543541","0.0-46.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1732","
+                  <p>Round 11: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(1,1)</td>
+                    </tr>
+                  </table>
+              
+              ","0","","","","","","","","","11","false","experiment","A","B","0","5","","1"
+"feedback","47","550726","0.0-47.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","7183","
+                <p>Results of Round 11:</p>
+                <p>You chose: A</p>
+                <p>Your partner chose: B</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(3,3)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(1,1)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-AB {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>0</strong></p>
+                <p>Your total payoff: 22</p>
+            ","0","","","","","","","","","11","false","experiment","","","","","","1"
+"communication","48","557143","0.0-48.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","Let's cooperate!","Yes, we have more to gain together.","12","false","experiment","","","","","","1"
+"decision","49","558194","0.0-49.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1049","
+                  <p>Round 12: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(1,1)</td>
+                    </tr>
+                  </table>
+              
+              ","1","","","","","","","","","12","false","experiment","B","A","5","0","","1"
+"feedback","50","562177","0.0-50.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","3980","
+                <p>Results of Round 12:</p>
+                <p>You chose: B</p>
+                <p>Your partner chose: A</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(3,3)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(1,1)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-BA {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>5</strong></p>
+                <p>Your total payoff: 27</p>
+            ","0","","","","","","","","","12","false","experiment","","","","","","1"
+"communication","51","576498","0.0-51.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","Let's cooperate!","Yes, we have more to gain together.","13","false","experiment","","","","","","4"
+"decision","52","583533","0.0-52.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","7032","
+                  <p>Round 13: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              
+              ","0","","","","","","","","","13","false","experiment","A","B","0","5","","4"
+"feedback","53","585700","0.0-53.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","2165","
+                <p>Results of Round 13:</p>
+                <p>You chose: A</p>
+                <p>Your partner chose: B</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(3,3)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(2,2)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-AB {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>0</strong></p>
+                <p>Your total payoff: 27</p>
+            ","0","","","","","","","","","13","false","experiment","","","","","","4"
+"communication","54","592484","0.0-54.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","Let's cooperate!","Yes, we have more to gain together.","14","false","experiment","","","","","","4"
+"decision","55","593585","0.0-55.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1098","
+                  <p>Round 14: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              
+              ","1","","","","","","","","","14","false","experiment","B","A","5","0","","4"
+"feedback","56","597054","0.0-56.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","3465","
+                <p>Results of Round 14:</p>
+                <p>You chose: B</p>
+                <p>Your partner chose: A</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(3,3)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(2,2)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-BA {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>5</strong></p>
+                <p>Your total payoff: 32</p>
+            ","0","","","","","","","","","14","false","experiment","","","","","","4"
+"communication","57","627102","0.0-57.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","Let's cooperate!","Yes, we have more to gain together.","15","false","experiment","","","","","","2"
+"decision","58","629435","0.0-58.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","2327","
+                  <p>Round 15: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(4,4)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(1,1)</td>
+                    </tr>
+                  </table>
+              
+              ","1","","","","","","","","","15","false","experiment","B","B","1","1","","2"
+"feedback","59","631102","0.0-59.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1663","
+                <p>Results of Round 15:</p>
+                <p>You chose: B</p>
+                <p>Your partner chose: B</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(4,4)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(1,1)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-BB {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>1</strong></p>
+                <p>Your total payoff: 33</p>
+            ","0","","","","","","","","","15","false","experiment","","","","","","2"
+"communication","60","637770","0.0-60.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","Let's cooperate!","Yes, we have more to gain together.","16","false","experiment","","","","","","4"
+"decision","61","638903","0.0-61.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1131","
+                  <p>Round 16: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              
+              ","0","","","","","","","","","16","false","experiment","A","B","0","5","","4"
+"feedback","62","641737","0.0-62.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","2831","
+                <p>Results of Round 16:</p>
+                <p>You chose: A</p>
+                <p>Your partner chose: B</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(3,3)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(2,2)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-AB {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>0</strong></p>
+                <p>Your total payoff: 33</p>
+            ","0","","","","","","","","","16","false","experiment","","","","","","4"
+"communication","63","648187","0.0-63.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","Let's cooperate!","Yes, we have more to gain together.","17","false","experiment","","","","","","2"
+"decision","64","649105","0.0-64.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","916","
+                  <p>Round 17: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(4,4)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(1,1)</td>
+                    </tr>
+                  </table>
+              
+              ","1","","","","","","","","","17","false","experiment","B","A","5","0","","2"
+"feedback","65","652039","0.0-65.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","2930","
+                <p>Results of Round 17:</p>
+                <p>You chose: B</p>
+                <p>Your partner chose: A</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(4,4)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(1,1)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-BA {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>5</strong></p>
+                <p>Your total payoff: 38</p>
+            ","0","","","","","","","","","17","false","experiment","","","","","","2"
+"communication","66","659258","0.0-66.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","Let's cooperate!","Yes, this is mutually beneficial.","18","false","experiment","","","","","","1"
+"decision","67","660292","0.0-67.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1031","
+                  <p>Round 18: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(1,1)</td>
+                    </tr>
+                  </table>
+              
+              ","0","","","","","","","","","18","false","experiment","A","B","0","5","","1"
+"feedback","68","662975","0.0-68.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","2680","
+                <p>Results of Round 18:</p>
+                <p>You chose: A</p>
+                <p>Your partner chose: B</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(3,3)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(1,1)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-AB {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>0</strong></p>
+                <p>Your total payoff: 38</p>
+            ","0","","","","","","","","","18","false","experiment","","","","","","1"
+"communication","69","669443","0.0-69.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","Let's cooperate!","Yes, we have more to gain together.","19","false","experiment","","","","","","4"
+"decision","70","678612","0.0-70.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","9167","
+                  <p>Round 19: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              
+              ","1","","","","","","","","","19","false","experiment","B","A","5","0","","4"
+"feedback","71","679895","0.0-71.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1281","
+                <p>Results of Round 19:</p>
+                <p>You chose: B</p>
+                <p>Your partner chose: A</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(3,3)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(2,2)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-BA {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>5</strong></p>
+                <p>Your total payoff: 43</p>
+            ","0","","","","","","","","","19","false","experiment","","","","","","4"
+"communication","72","688197","0.0-72.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","What strategy should we use?","Cooperation is better for the two of us.","20","false","experiment","","","","","","1"
+"decision","73","689264","0.0-73.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1064","
+                  <p>Round 20: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(1,1)</td>
+                    </tr>
+                  </table>
+              
+              ","0","","","","","","","","","20","false","experiment","A","B","0","5","","1"
+"feedback","74","691164","0.0-74.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1898","
+                <p>Results of Round 20:</p>
+                <p>You chose: A</p>
+                <p>Your partner chose: B</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(3,3)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(1,1)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-AB {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>0</strong></p>
+                <p>Your total payoff: 43</p>
+            ","0","","","","","","","","","20","false","experiment","","","","","","1"
+"communication","75","697949","0.0-75.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","Let's cooperate!","Yes, we have more to gain together.","21","false","experiment","","","","","","2"
+"decision","76","698966","0.0-76.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1014","
+                  <p>Round 21: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(4,4)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(1,1)</td>
+                    </tr>
+                  </table>
+              
+              ","1","","","","","","","","","21","false","experiment","B","A","5","0","","2"
+"feedback","77","700516","0.0-77.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1549","
+                <p>Results of Round 21:</p>
+                <p>You chose: B</p>
+                <p>Your partner chose: A</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(4,4)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(1,1)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-BA {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>5</strong></p>
+                <p>Your total payoff: 48</p>
+            ","0","","","","","","","","","21","false","experiment","","","","","","2"
+"communication","78","706487","0.0-78.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","I do not know if I should cooperate as I do not know if you will cooperate.","Cooperation is better for the two of us.","22","false","experiment","","","","","","2"
+"decision","79","716253","0.0-79.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","9765","
+                  <p>Round 22: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(4,4)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(1,1)</td>
+                    </tr>
+                  </table>
+              
+              ","1","","","","","","","","","22","false","experiment","B","B","1","1","","2"
+"feedback","80","717603","0.0-80.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1348","
+                <p>Results of Round 22:</p>
+                <p>You chose: B</p>
+                <p>Your partner chose: B</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(4,4)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(1,1)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-BB {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>1</strong></p>
+                <p>Your total payoff: 49</p>
+            ","0","","","","","","","","","22","false","experiment","","","","","","2"
+"communication","81","724905","0.0-81.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","Let's cooperate!","Yes, this is mutually beneficial.","23","false","experiment","","","","","","4"
+"decision","82","725839","0.0-82.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","931","
+                  <p>Round 23: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              
+              ","0","","","","","","","","","23","false","experiment","A","B","0","5","","4"
+"feedback","83","728673","0.0-83.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","2831","
+                <p>Results of Round 23:</p>
+                <p>You chose: A</p>
+                <p>Your partner chose: B</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(3,3)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(2,2)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-AB {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>0</strong></p>
+                <p>Your total payoff: 49</p>
+            ","0","","","","","","","","","23","false","experiment","","","","","","4"
+"communication","84","734840","0.0-84.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","There is no point in cooperating!","I disagree, I think we should cooperate.","24","false","experiment","","","","","","1"
+"decision","85","737958","0.0-85.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","3112","
+                  <p>Round 24: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(1,1)</td>
+                    </tr>
+                  </table>
+              
+              ","1","","","","","","","","","24","false","experiment","B","A","5","0","","1"
+"feedback","86","739458","0.0-86.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1497","
+                <p>Results of Round 24:</p>
+                <p>You chose: B</p>
+                <p>Your partner chose: A</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(3,3)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(1,1)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-BA {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>5</strong></p>
+                <p>Your total payoff: 54</p>
+            ","0","","","","","","","","","24","false","experiment","","","","","","1"
+"communication","87","745859","0.0-87.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","There is no point in cooperating!","I disagree, cooperation is better for the two of us.","25","false","experiment","","","","","","4"
+"decision","88","747077","0.0-88.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1215","
+                  <p>Round 25: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              
+              ","0","","","","","","","","","25","false","experiment","A","B","0","5","","4"
+"feedback","89","754662","0.0-89.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","7582","
+                <p>Results of Round 25:</p>
+                <p>You chose: A</p>
+                <p>Your partner chose: B</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(3,3)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(2,2)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-AB {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>0</strong></p>
+                <p>Your total payoff: 54</p>
+            ","0","","","","","","","","","25","false","experiment","","","","","","4"
+"communication","90","761130","0.0-90.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","There is no point in cooperating!","I disagree, I think we should cooperate.","26","false","experiment","","","","","","4"
+"decision","91","767281","0.0-91.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","6149","
+                  <p>Round 26: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              
+              ","1","","","","","","","","","26","false","experiment","B","A","5","0","","4"
+"feedback","92","771232","0.0-92.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","3948","
+                <p>Results of Round 26:</p>
+                <p>You chose: B</p>
+                <p>Your partner chose: A</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(3,3)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(2,2)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-BA {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>5</strong></p>
+                <p>Your total payoff: 59</p>
+            ","0","","","","","","","","","26","false","experiment","","","","","","4"
+"communication","93","777750","0.0-93.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","There is no point in cooperating!","I disagree, cooperation is better for the two of us.","27","false","experiment","","","","","","1"
+"decision","94","783985","0.0-94.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","6233","
+                  <p>Round 27: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(1,1)</td>
+                    </tr>
+                  </table>
+              
+              ","0","","","","","","","","","27","false","experiment","A","B","0","5","","1"
+"feedback","95","823547","0.0-95.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","39554","
+                <p>Results of Round 27:</p>
+                <p>You chose: A</p>
+                <p>Your partner chose: B</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(3,3)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(1,1)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-AB {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>0</strong></p>
+                <p>Your total payoff: 59</p>
+            ","0","","","","","","","","","27","false","experiment","","","","","","1"
+"communication","96","853561","0.0-96.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","No Selection","No Response","28","false","experiment","","","","","","4"
+"decision","97","856398","0.0-97.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","2832","
+                  <p>Round 28: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              
+              ","0","","","","","","","","","28","false","experiment","A","A","3","3","","4"
+"feedback","98","862384","0.0-98.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","5981","
+                <p>Results of Round 28:</p>
+                <p>You chose: A</p>
+                <p>Your partner chose: A</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(3,3)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(2,2)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-AA {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>3</strong></p>
+                <p>Your total payoff: 62</p>
+            ","0","","","","","","","","","28","false","experiment","","","","","","4"
+"communication","99","869269","0.0-99.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","Let's cooperate!","Yes, we have more to gain together.","29","false","experiment","","","","","","4"
+"decision","100","870285","0.0-100.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1013","
+                  <p>Round 29: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              
+              ","1","","","","","","","","","29","false","experiment","B","A","5","0","","4"
+"feedback","101","872452","0.0-101.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","2165","
+                <p>Results of Round 29:</p>
+                <p>You chose: B</p>
+                <p>Your partner chose: A</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(3,3)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(2,2)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-BA {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>5</strong></p>
+                <p>Your total payoff: 67</p>
+            ","0","","","","","","","","","29","false","experiment","","","","","","4"
+"communication","102","879120","0.0-102.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","Let's cooperate!","Yes, we have more to gain together.","30","false","experiment","","","","","","4"
+"decision","103","880204","0.0-103.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1082","
+                  <p>Round 30: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              
+              ","0","","","","","","","","","30","false","experiment","A","B","0","5","","4"
+"feedback","104","882007","0.0-104.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1800","
+                <p>Results of Round 30:</p>
+                <p>You chose: A</p>
+                <p>Your partner chose: B</p>
+                
+      
+      <table class=""payoff-matrix"">
+        <tr>
+          <th rowspan=""2"">Your Choice</th>
+          <th colspan=""2"">Partner's Choice</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <td id=""cell-AA"">(3,3)</td>
+          <td id=""cell-AB"">(0,5)</td>
+        </tr>
+        <tr>
+          <th>B</th>
+          <td id=""cell-BA"">(5,0)</td>
+          <td id=""cell-BB"">(2,2)</td>
+        </tr>
+      </table>
+      <style>
+        #cell-AB {
+          background-color: yellow;
+        }
+      </style>
+  
+  
+                <p>Your payoff this round: <strong>0</strong></p>
+                <p>Your total payoff: 67</p>
+            ","0","","","","","","","","","30","false","experiment","","","","","","4"
+"html-button-response","105","941542","0.0-105.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","59531","<h2>Participant Debrief</h2>
+<p><strong>Department of Psychology, University of Warwick</strong></p>
+<p><strong>Study title:</strong> Playing a Cooperation/Defection game with a Partner Online<br>
+<strong>Name of Researcher:</strong> Luc Mekouar<br>
+<strong>Name of Supervisor:</strong> Dr. Maria Robinson</p>
+
+<p>Thank you for participating in this study.</p>
+
+<h3>Study Aims</h3>
+<p>The purpose of this research is to better understand the role of communication in cooperation between human and machines.</p>
+
+<p>In this study, you were asked to play a cooperation game with a bot over 30 iterations.</p>
+
+<p>You may or may not have had the ability to communicate with your partner: send pre-written messages to your partner bot who answered with prewritten messages too.</p>
+
+<p>This experiment included a small amount of deceptions as you were not told that the actions of the bot were independent of the messages you sent them (if you could communicate). Informing you of that would have disincentivized you to communicate, leading to inconclusive results.</p>
+
+<p>The results from this study will help scientists better understand how humans interact and cooperate with machines. This is important to make sure the potential deployment of digital agents in society is done in a safe and beneficial way.</p>
+
+<h3>Withdrawal</h3>
+<p>We would like to remind you that you may only withdraw your data by checking the tick box below. After you leave this page, it will no longer be possible to remove your data, nor will it be possible to identify it or link it to you.</p>
+
+<p><input type=""checkbox""> Please click here if you do not want your data to be used in this study.</p>
+
+<h3>Further Information/Complaints</h3>
+<p>If you have a complaint about the way you have been dealt with during the study, please contact Dr. Maria Robinson (<a href=""mailto:maria.robinson@warwick.ac.uk"">maria.robinson@warwick.ac.uk</a>), who is the supervisor of this study.</p>
+","0","","","","","","","","","","","","","","","","",""

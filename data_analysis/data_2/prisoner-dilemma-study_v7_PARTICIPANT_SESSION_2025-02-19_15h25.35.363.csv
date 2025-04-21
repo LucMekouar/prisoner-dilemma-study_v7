@@ -1,0 +1,691 @@
+"trial_type","trial_index","time_elapsed","internal_node_id","group","round_payoff_matrix","rt","stimulus","button_pressed","consent","responses","age","gender","gender_other","view_history","selected_question","bot_response","round","isPractice","phase","participant_move","bot_move","participant_payoff","bot_payoff","value","matrix_number"
+"pavlovia","0","597","0.0-0.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","","","","","","","","","","",""
+"html-button-response","1","2671","0.0-1.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","2070","<!-- resources/consent_form.html -->
+
+<h2>Consent Form</h2>
+<p><strong>Department of Psychology, University of Warwick</strong></p>
+
+<p><strong>Study title:</strong> Playing a Cooperation/Defection game with a Partner Online<br>
+<strong>Name of Researcher:</strong> Luc Mekouar<br>
+<strong>Name of Supervisor:</strong> Dr. Maria Robinson</p>
+
+<p>Welcome and thank you for your interest in this research study! This research study is on understanding human cooperation in a digital setting. You will be asked to play the game of prisoner’s dilemma with a provided partner over multiple rounds. The rules will be clearly stated before the game begins, and you will have the opportunity to practice.</p>
+
+<p><strong>You must be over the age of 18 to take part.</strong></p>
+
+<p>You will also be asked to report demographic information (gender and age) to allow us to understand our sample better and determine the generalizability of the findings.</p>
+
+<p>The experiment should take about 15 minutes to complete. You will be playing with a partner multiple rounds. Each round, you and your partner each will be able to either cooperate or defect, after which you and your partner will receive in-game reward (fictional), where the amount depends on both you and your partner’s decision in that round.</p>
+
+<p>At the end of the survey, you will have the option to enter a prize draw to win an amazon voucher worth £20. Please note that to enter the draw you must provide your email address. However, please note that this information will not be connected to your study responses. The prize draw will take place on the 24th of February, after which your email will be deleted.</p>
+
+<p>This study is being conducted as part of my 3rd year project at the University of Warwick and is not funded by an external body.</p>
+
+<p>Your participation is completely voluntary. You can withdraw at any time, and for any reason, simply by closing your browser.</p>
+
+<p>No identifiable data will be collected from you as part of this study. This means that once your responses have been submitted to the research team, it will not be possible to withdraw this data as your individual responses cannot be identified.</p>
+
+<p>Data will be securely stored on University of Warwick secure storage and will be processed only for the purpose of scientific analysis. Access to the data will be restricted to the investigators listed above. Data will be reviewed on completion of the research, in line with the University of Warwick data retention policy.</p>
+
+<p>Please refer to the University of Warwick Research Privacy Notice which is available here: <a href=""https://warwick.ac.uk/services/idc/dataprotection/privacynotices/researchprivacynotice"">Research Privacy Notice</a> or by contacting the Information and Data Compliance Team at <a href=""mailto:infocompliance@warwick.ac.uk"">infocompliance@warwick.ac.uk</a>.</p>
+
+<p>This study has been reviewed and given a favourable opinion by the University of Warwick’s Department of Psychology Research Ethics Committee.</p>
+
+<h3>Additional Support</h3>
+<p>If you require further information, please contact Luc Mekouar at <a href=""mailto:luc.mekouar@warwick.ac.uk"">luc.mekouar@warwick.ac.uk</a> or their academic supervisor Dr. Maria Robinson at <a href=""mailto:maria.robinson@warwick.ac.uk"">maria.robinson@warwick.ac.uk</a>.</p>
+
+<h3>Who should I contact if I wish to make a complaint?</h3>
+<p>Any complaint should be addressed to the person below, who is the supervisor of this study:</p>
+<p><strong>Supervisor’s name:</strong> Dr. Maria Robinson<br>
+<strong>Address:</strong> Department of Psychology, University of Warwick, Coventry, CV4 7AL<br>
+<strong>Email:</strong> <a href=""mailto:maria.robinson@warwick.ac.uk"">maria.robinson@warwick.ac.uk</a></p>
+
+<p>If you wish to raise a complaint about how we have handled your personal data, you can contact our Data Protection Officer who will investigate the matter: <a href=""mailto:DPO@warwick.ac.uk"">DPO@warwick.ac.uk</a>.</p>
+
+<p>If you are not satisfied with our response or believe we are processing your personal data in a way that is not lawful, you can complain to the Information Commissioner’s Office (ICO).</p>
+
+<p>Thank you for taking the time to read this Participant Information Leaflet.</p>
+
+<p>I have read the above and … </p>
+","0","true","","","","","","","","","","","","","","","",""
+"survey-html-form","2","3861","0.0-2.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1188.1000000238419","","","","{""age"":"""",""gender"":"""",""gender_other"":""""}","null","null","null","","","","","","","","","","","",""
+"instructions","3","9232","0.0-3.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","5370","","","","","","","","[{""page_index"":0,""viewing_time"":635},{""page_index"":1,""viewing_time"":479},{""page_index"":2,""viewing_time"":154},{""page_index"":3,""viewing_time"":1130},{""page_index"":4,""viewing_time"":891},{""page_index"":5,""viewing_time"":1055},{""page_index"":6,""viewing_time"":620},{""page_index"":7,""viewing_time"":188},{""page_index"":8,""viewing_time"":218}]","","","","","","","","","","",""
+"html-button-response","4","14422","0.0-4.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","Testing communication: Do you receive?","Yes I do.","1","true","practice","","","","","",""
+"html-button-response","4","14422","0.0-4.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","","","1","true","practice","","","","","",""
+"decision","5","15412","0.0-5.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","987","
+          <p>Practice 1: Decision Phase</p>
+          <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+          <p>Choose your action:</p>
+          
+          <table class=""payoff-matrix"">
+            <tr>
+              <th rowspan=""2"">Your Choice</th>
+              <th colspan=""2"">Partner's Choice</th>
+            </tr>
+            <tr>
+              <th>A</th>
+              <th>B</th>
+            </tr>
+            <tr>
+              <th>A</th>
+              <td>(3,3)</td>
+              <td>(0,5)</td>
+            </tr>
+            <tr>
+              <th>B</th>
+              <td>(5,0)</td>
+              <td>(1,1)</td>
+            </tr>
+          </table>
+        
+        ","1","","","","","","","","","1","true","practice","B","A","5","0","",""
+"html-button-response","6","16233","0.0-6.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","819","
+          <p>Results of Practice 1:</p>
+          <p>You chose: B</p>
+          <p>Your partner chose: A</p>
+          
+    <table class=""payoff-matrix"">
+      <tr>
+        <th rowspan=""2"">Your Choice</th>
+        <th colspan=""2"">Partner's Choice</th>
+      </tr>
+      <tr>
+        <th>A</th>
+        <th>B</th>
+      </tr>
+      <tr>
+        <th>A</th>
+        <td id=""cell-AA"">(3,3)</td>
+        <td id=""cell-AB"">(0,5)</td>
+      </tr>
+      <tr>
+        <th>B</th>
+        <td id=""cell-BA"">(5,0)</td>
+        <td id=""cell-BB"">(1,1)</td>
+      </tr>
+    </table>
+    <style>
+      #cell-BA {
+        background-color: yellow;
+      }
+    </style>
+  
+          <p>Your payoff this round: <strong>5</strong></p>
+          <p>Practice rounds do not count towards your total fictional payoff.</p>
+        ","0","","","","","","","","","1","true","practice","","","","","",""
+"html-button-response","7","22221","0.0-7.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","I am ready to start the experiment.","Well, we are about to start.","2","true","practice","","","","","",""
+"html-button-response","7","22222","0.0-7.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","","","2","true","practice","","","","","",""
+"decision","8","22994","0.0-8.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","770","
+          <p>Practice 2: Decision Phase</p>
+          <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+          <p>Choose your action:</p>
+          
+          <table class=""payoff-matrix"">
+            <tr>
+              <th rowspan=""2"">Your Choice</th>
+              <th colspan=""2"">Partner's Choice</th>
+            </tr>
+            <tr>
+              <th>A</th>
+              <th>B</th>
+            </tr>
+            <tr>
+              <th>A</th>
+              <td>(3,3)</td>
+              <td>(0,5)</td>
+            </tr>
+            <tr>
+              <th>B</th>
+              <td>(5,0)</td>
+              <td>(1,1)</td>
+            </tr>
+          </table>
+        
+        ","1","","","","","","","","","2","true","practice","B","B","1","1","",""
+"html-button-response","9","24227","0.0-9.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","1232","
+          <p>Results of Practice 2:</p>
+          <p>You chose: B</p>
+          <p>Your partner chose: B</p>
+          
+    <table class=""payoff-matrix"">
+      <tr>
+        <th rowspan=""2"">Your Choice</th>
+        <th colspan=""2"">Partner's Choice</th>
+      </tr>
+      <tr>
+        <th>A</th>
+        <th>B</th>
+      </tr>
+      <tr>
+        <th>A</th>
+        <td id=""cell-AA"">(3,3)</td>
+        <td id=""cell-AB"">(0,5)</td>
+      </tr>
+      <tr>
+        <th>B</th>
+        <td id=""cell-BA"">(5,0)</td>
+        <td id=""cell-BB"">(1,1)</td>
+      </tr>
+    </table>
+    <style>
+      #cell-BB {
+        background-color: yellow;
+      }
+    </style>
+  
+          <p>Your payoff this round: <strong>1</strong></p>
+          <p>Practice rounds do not count towards your total fictional payoff.</p>
+        ","0","","","","","","","","","2","true","practice","","","","","",""
+"html-button-response","10","30376","0.0-10.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","I am ready to start the experiment.","So am I, let's get started.","3","true","practice","","","","","",""
+"html-button-response","10","30376","0.0-10.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","","","3","true","practice","","","","","",""
+"decision","11","31168","0.0-11.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","789","
+          <p>Practice 3: Decision Phase</p>
+          <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+          <p>Choose your action:</p>
+          
+          <table class=""payoff-matrix"">
+            <tr>
+              <th rowspan=""2"">Your Choice</th>
+              <th colspan=""2"">Partner's Choice</th>
+            </tr>
+            <tr>
+              <th>A</th>
+              <th>B</th>
+            </tr>
+            <tr>
+              <th>A</th>
+              <td>(3,3)</td>
+              <td>(0,5)</td>
+            </tr>
+            <tr>
+              <th>B</th>
+              <td>(5,0)</td>
+              <td>(1,1)</td>
+            </tr>
+          </table>
+        
+        ","0","","","","","","","","","3","true","practice","A","B","0","5","",""
+"html-button-response","12","31857","0.0-12.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","688","
+          <p>Results of Practice 3:</p>
+          <p>You chose: A</p>
+          <p>Your partner chose: B</p>
+          
+    <table class=""payoff-matrix"">
+      <tr>
+        <th rowspan=""2"">Your Choice</th>
+        <th colspan=""2"">Partner's Choice</th>
+      </tr>
+      <tr>
+        <th>A</th>
+        <th>B</th>
+      </tr>
+      <tr>
+        <th>A</th>
+        <td id=""cell-AA"">(3,3)</td>
+        <td id=""cell-AB"">(0,5)</td>
+      </tr>
+      <tr>
+        <th>B</th>
+        <td id=""cell-BA"">(5,0)</td>
+        <td id=""cell-BB"">(1,1)</td>
+      </tr>
+    </table>
+    <style>
+      #cell-AB {
+        background-color: yellow;
+      }
+    </style>
+  
+          <p>Your payoff this round: <strong>0</strong></p>
+          <p>Practice rounds do not count towards your total fictional payoff.</p>
+        ","0","","","","","","","","","3","true","practice","","","","","",""
+"html-button-response","13","32657","0.0-13.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","798","<p>You have completed the practice rounds. When you are ready, press the button below to start the main experiment.</p>","0","","","","","","","","","","","","","","","","",""
+"call-function","14","32658","0.0-14.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","","","","","","","","","","",""
+"communication","15","62660","0.0-15.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","","","","","","","","","","No Selection","No Response","1","false","experiment","","","","","","4"
+"decision","16","92665","0.0-16.0","communication_bot","
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              ","null","
+                  <p>Round 1: Decision Phase</p>
+                  <p>You have <span id=""decision-countdown"">30</span> seconds to make your choice.</p>
+                  <p>Choose your action:</p>
+                  
+                  <table class=""payoff-matrix"">
+                    <tr>
+                      <th rowspan=""2"">Your Choice</th>
+                      <th colspan=""2"">Partner's Choice</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <th>A</th>
+                      <td>(3,3)</td>
+                      <td>(0,5)</td>
+                    </tr>
+                    <tr>
+                      <th>B</th>
+                      <td>(5,0)</td>
+                      <td>(2,2)</td>
+                    </tr>
+                  </table>
+              
+              ","null","","","","","","","","","1","false","experiment","No Response","No Response","0","0","","4"
