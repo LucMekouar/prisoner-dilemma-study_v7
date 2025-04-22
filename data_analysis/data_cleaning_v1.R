@@ -1,6 +1,9 @@
 # Load necessary library
 library(tidyverse)
 library(dplyr)
+library(ggplot2)
+library(scales) 
+library(RColorBrewer)
 
 # Define the folder path
 folder_path <- "/Users/lucmacbookpro-profile/Desktop/y3 project research/prisoner-dilemma-study_v7/data_analysis/data_2"
@@ -211,3 +214,100 @@ if (n_distinct(valid_D$group_num) == 2) {
 } else {
   cat("Cannot run Student’s t‑test for p_i^D: one group has no data.\n")
 }
+
+# ---- full stacked‐area plot generation (most→least cooperation) ----
+# 1) Define messages least→most cooperative
+message_levels_asc <- c(
+  "There is no point in cooperating!",
+  "I do not know if I should cooperate as I do not know if you will cooperate.",
+  "What strategy should we use?",
+  "Do you think we should cooperate?",
+  "I think we should cooperate to improve both our earnings.",
+  "Let's cooperate!"
+)
+
+# 2) Pivot long
+comm_long <- combined_participants_data %>%
+  filter(group_num == 1) %>%
+  select(starts_with("message_r")) %>%
+  pivot_longer(
+    cols         = everything(),
+    names_to     = "round",
+    names_prefix = "message_r",
+    values_to    = "message"
+  ) %>%
+  mutate(
+    round   = as.integer(round),
+    message = factor(message, levels = message_levels_asc)
+  )
+
+# 3) Count per round × message
+counts <- comm_long %>%
+  group_by(round, message) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  complete(round = 1:30, message = message_levels_asc, fill = list(count = 0))
+
+# 4) Convert to percentages
+pct <- counts %>%
+  group_by(round) %>%
+  mutate(
+    percent = count / sum(count) * 100
+  ) %>%
+  ungroup()
+
+# 5) Compute cumulative boundaries on percent scale
+stacked_pct <- pct %>%
+  group_by(round) %>%
+  arrange(match(message, message_levels_asc), .by_group = TRUE) %>%
+  mutate(
+    ymin_pct = lag(cumsum(percent), default = 0),
+    ymax_pct = cumsum(percent)
+  ) %>%
+  ungroup()
+
+# 6) Palette (dark blue→dark red)
+palette6 <- colorRampPalette(c("#313695", "#A50026"))(6)
+
+# 7) Plot
+p <- ggplot(stacked_pct, aes(x = round)) +
+  geom_ribbon(aes(ymin = ymin_pct, ymax = ymax_pct, fill = message),
+              color = "grey20", alpha = 0.7) +
+  scale_x_continuous(breaks = seq(0, 30, by = 5)) +
+  scale_y_continuous(
+    labels = label_percent(scale = 1),    # 0–100 → "0%", "50%", "100%"
+    expand = expansion(mult = c(0, .02))
+  ) +
+  scale_fill_manual(
+    values = setNames(palette6, message_levels_asc),
+    breaks = message_levels_asc,
+    guide  = guide_legend(
+      title   = "Message",
+      reverse = TRUE    # legend top = "Let's cooperate!"
+    )
+  ) +
+  labs(
+    title = "Message Use Over 30 Rounds (Communication Group)",
+    x     = "Round",
+    y     = "% of Participants"
+  ) +
+  theme_bw(base_size = 14) +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_line(color = "grey80"),
+    panel.background = element_rect(fill = "white", colour = NA),
+    plot.background  = element_rect(fill = "white", colour = NA),
+    legend.position  = "right",
+    aspect.ratio     = 0.6
+  )
+
+# 8) Save
+ggsave(
+  filename = file.path(dirname(output_file_path), "message_stackplot_pct.png"),
+  plot     = p,
+  width    = 10,
+  height   = 6,
+  dpi      = 300
+)
+
+cat("Percentage‑stacked plot saved to:",
+    file.path(dirname(output_file_path), "message_stackplot_pct.png"), "\n")
