@@ -2,109 +2,157 @@
 library(tidyverse)
 
 # Define the folder path
-folder_path <- "/Users/lucmacbookpro-profile/Desktop/y3 project research/data"
+folder_path <- "/Users/lucmacbookpro-profile/Desktop/y3 project research/prisoner-dilemma-study_v7/data_analysis/data_2"
 
 # Initialize an empty list to store participant data
 all_participants_data <- list()
 
 # Iterate over each file in the folder
-for (file_name in list.files(folder_path, pattern = "*.csv", full.names = TRUE)) {
+for (file_name in list.files(folder_path, pattern = "\\.csv$", full.names = TRUE)) {
   # Read the CSV file
-  data <- read_csv(file_name)
+  data <- read_csv(file_name, show_col_types = FALSE)
   
   # Check if the file has at least 60 rows
   if (nrow(data) >= 60) {
-    # Extract necessary information
-    id <- length(all_participants_data) + 1
-    consent <- data$consent[2]
-    age <- data$age[3]
-    gender <- data$gender[3]
-    group <- data$group[1]
-    group_num <- ifelse(group == "communication_bot", 1, 0)
+    # Basic participant info
+    id           <- length(all_participants_data) + 1
+    consent      <- data$consent[2]
+    age          <- data$age[3]
+    gender       <- data$gender[3]
+    group        <- data$group[1]
+    group_num    <- ifelse(group == "communication_bot", 1, 0)
     total_payoff <- sum(data$participant_payoff, na.rm = TRUE)
     
-    # Extract participant moves, bot moves, and matrix numbers for non-practice rounds
+    # Extract non‑practice rounds 1–30
     moves_data <- data %>%
-      filter(!isPractice & !is.na(participant_move) & participant_move != "") %>%
+      filter(!isPractice, !is.na(participant_move), participant_move != "") %>%
       select(round, participant_move, bot_move, matrix_number)
     
-    # Create named vectors for participant moves, bot moves, and matrix numbers
-    participant_move_vector <- setNames(moves_data$participant_move, paste0("participant_move_r", moves_data$round))
-    bot_move_vector <- setNames(moves_data$bot_move, paste0("bot_move_r", moves_data$round))
-    matrix_number_vector <- setNames(moves_data$matrix_number, paste0("matrix_number_r", moves_data$round))
+    # Named vectors for moves & matrices
+    participant_move_vector <- setNames(
+      moves_data$participant_move,
+      paste0("participant_move_r", moves_data$round)
+    )
+    bot_move_vector <- setNames(
+      moves_data$bot_move,
+      paste0("bot_move_r", moves_data$round)
+    )
+    matrix_number_vector <- setNames(
+      moves_data$matrix_number,
+      paste0("matrix_number_r", moves_data$round)
+    )
     
-    # Count the number of 'A' in participant_move_r* columns
-    coop_count <- sum(participant_move_vector == "A", na.rm = TRUE)
+    # Build 30‑round message vector via row indices: row = 16 + 3*round
+    message_vector <- setNames(rep("", 30), paste0("message_r", 1:30))
+    if (group_num == 1) {
+      for (r in moves_data$round) {
+        row_idx <- 16 + 3 * r
+        message_vector[[paste0("message_r", r)]] <-
+          as.character(data$selected_question[row_idx])
+      }
+    }
     
-    # Append the participant data to the list
-    all_participants_data <- append(all_participants_data, list(tibble(
-      id = id,
-      consent = consent,
-      age = age,
-      gender = gender,
-      group = group,
-      group_num = group_num,
-      total_payoff = total_payoff,
-      coop_count = coop_count,
+    # Build 30‑round message_coop_score vector (NA or mapped score)
+    score_map <- c(
+      "Let's cooperate!"                                                          = 6,
+      "I think we should cooperate to improve both our earnings."                 = 5,
+      "Do you think we should cooperate?"                                         = 4,
+      "What strategy should we use?"                                              = 3,
+      "I do not know if I should cooperate as I do not know if you will cooperate." = 2,
+      "There is no point in cooperating!"                                         = 1
+    )
+    message_score_vector <- setNames(rep(NA_integer_, 30), paste0("message_coop_score_r", 1:30))
+    if (group_num == 1) {
+      for (r in 1:30) {
+        msg <- message_vector[[paste0("message_r", r)]]
+        if (msg %in% names(score_map)) {
+          message_score_vector[[paste0("message_coop_score_r", r)]] <- score_map[[msg]]
+        }
+      }
+    }
+    
+    # Compute cooperation counts
+    coop_count  <- sum(participant_move_vector == "A", na.rm = TRUE)
+    coop_count1 <- sum(participant_move_vector[paste0("participant_move_r",  1:10)] == "A", na.rm = TRUE)
+    coop_count2 <- sum(participant_move_vector[paste0("participant_move_r", 11:20)] == "A", na.rm = TRUE)
+    coop_count3 <- sum(participant_move_vector[paste0("participant_move_r", 21:30)] == "A", na.rm = TRUE)
+    
+    # Compute communication_count: number of non-"No Selection" messages if communication_bot
+    communication_count <- if (group_num == 1) {
+      sum(message_vector != "No Selection")
+    } else {
+      NA_integer_
+    }
+    
+    # Assemble into a tibble
+    all_participants_data[[id]] <- tibble(
+      id                   = id,
+      consent              = consent,
+      age                  = age,
+      gender               = gender,
+      group                = group,
+      group_num            = group_num,
+      total_payoff         = total_payoff,
+      coop_count           = coop_count,
+      coop_count1          = coop_count1,
+      coop_count2          = coop_count2,
+      coop_count3          = coop_count3,
+      communication_count  = communication_count,
+      
+      !!!matrix_number_vector,
+      !!!message_vector,
+      !!!message_score_vector,
       !!!participant_move_vector,
-      !!!bot_move_vector,
-      !!!matrix_number_vector
-    )))
+      !!!bot_move_vector
+    )
   }
 }
 
-# Combine all participant data into a single data frame
+# Combine all participant data into one data frame
 combined_participants_data <- bind_rows(all_participants_data)
 
-# Reorder the columns at the end
+# Reorder columns: fixed info → coop counts → communication_count →
+# then for r = 1..30: matrix_number_r, message_r, message_coop_score_r, participant_move_r, bot_move_r
+round_cols <- unlist(lapply(1:30, function(r) {
+  c(
+    paste0("matrix_number_r",      r),
+    paste0("message_r",            r),
+    paste0("message_coop_score_r", r),
+    paste0("participant_move_r",   r),
+    paste0("bot_move_r",           r)
+  )
+}))
+
 combined_participants_data <- combined_participants_data %>%
-  select(id, consent, age, gender, group, group_num, total_payoff, coop_count,
-         matrix_number_r1, participant_move_r1, bot_move_r1,
-         matrix_number_r2, participant_move_r2, bot_move_r2,
-         matrix_number_r3, participant_move_r3, bot_move_r3,
-         matrix_number_r4, participant_move_r4, bot_move_r4,
-         matrix_number_r5, participant_move_r5, bot_move_r5,
-         matrix_number_r6, participant_move_r6, bot_move_r6,
-         matrix_number_r7, participant_move_r7, bot_move_r7,
-         matrix_number_r8, participant_move_r8, bot_move_r8,
-         matrix_number_r9, participant_move_r9, bot_move_r9,
-         matrix_number_r10, participant_move_r10, bot_move_r10,
-         matrix_number_r11, participant_move_r11, bot_move_r11,
-         matrix_number_r12, participant_move_r12, bot_move_r12,
-         matrix_number_r13, participant_move_r13, bot_move_r13,
-         matrix_number_r14, participant_move_r14, bot_move_r14,
-         matrix_number_r15, participant_move_r15, bot_move_r15,
-         matrix_number_r16, participant_move_r16, bot_move_r16,
-         matrix_number_r17, participant_move_r17, bot_move_r17,
-         matrix_number_r18, participant_move_r18, bot_move_r18,
-         matrix_number_r19, participant_move_r19, bot_move_r19,
-         matrix_number_r20, participant_move_r20, bot_move_r20,
-         matrix_number_r21, participant_move_r21, bot_move_r21,
-         matrix_number_r22, participant_move_r22, bot_move_r22,
-         matrix_number_r23, participant_move_r23, bot_move_r23,
-         matrix_number_r24, participant_move_r24, bot_move_r24,
-         matrix_number_r25, participant_move_r25, bot_move_r25,
-         matrix_number_r26, participant_move_r26, bot_move_r26,
-         matrix_number_r27, participant_move_r27, bot_move_r27,
-         matrix_number_r28, participant_move_r28, bot_move_r28,
-         matrix_number_r29, participant_move_r29, bot_move_r29,
-         matrix_number_r30, participant_move_r30, bot_move_r30)
+  select(
+    id, consent, age, gender, group, group_num, total_payoff,
+    coop_count, coop_count1, coop_count2, coop_count3,
+    communication_count,
+    all_of(round_cols)
+  )
 
 # Print the combined data frame
 print(combined_participants_data)
 
-# Output the maximum total_payoff across all participants
+# Summary stats
 max_total_payoff <- max(combined_participants_data$total_payoff, na.rm = TRUE)
+comm_bots        <- sum(combined_participants_data$group_num)
+no_comm_bots     <- nrow(combined_participants_data) - comm_bots
+
 cat("Maximum total payoff across all participants:", max_total_payoff, "\n")
+cat("Count of participants in communication_bot condition:", comm_bots, "\n")
+cat("Count of participants in no_com_bot condition:", no_comm_bots, "\n")
 
-# Count participants in each group
-communication_bot_count <- sum(combined_participants_data$group_num)
-no_com_bot_count <- nrow(combined_participants_data) - communication_bot_count
+# Distribution of message_coop_score across all participants
+all_scores <- unlist(combined_participants_data %>%
+                       select(starts_with("message_coop_score_r")))
+all_scores <- all_scores[!is.na(all_scores)]
+score_dist <- sort(table(all_scores), decreasing = TRUE)
+cat("\nDistribution of message_coop_score:\n")
+for (s in names(score_dist)) {
+  cat(score_dist[s], "message_coop_score of", s, "\n")
+}
 
-# Print the counts
-cat("Count of participants in communication_bot condition:", communication_bot_count, "\n")
-cat("Count of participants in no_com_bot condition:", no_com_bot_count, "\n")
-
-# Save the combined data frame to a CSV file
-output_file_path <- "/Users/lucmacbookpro-profile/Desktop/y3 project research/combined_participants_data.csv"
+# Save to CSV (updated path)
+output_file_path <- "/Users/lucmacbookpro-profile/Desktop/y3 project research/prisoner-dilemma-study_v7/data_analysis/combined_participants_data.csv"
 write_csv(combined_participants_data, output_file_path)
