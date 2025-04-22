@@ -1,5 +1,6 @@
 # Load necessary library
 library(tidyverse)
+library(dplyr)
 
 # Define the folder path
 folder_path <- "/Users/lucmacbookpro-profile/Desktop/y3 project research/prisoner-dilemma-study_v7/data_analysis/data_2"
@@ -156,3 +157,57 @@ for (s in names(score_dist)) {
 # Save to CSV (updated path)
 output_file_path <- "/Users/lucmacbookpro-profile/Desktop/y3 project research/prisoner-dilemma-study_v7/data_analysis/combined_participants_data.csv"
 write_csv(combined_participants_data, output_file_path)
+
+# t-tests for proportion of cooperation given previous round was cooperation/defection between the two conditions
+# 1) Pivot to long once more
+long_moves <- combined_participants_data %>%
+  select(id, group_num, starts_with("participant_move_r")) %>%
+  pivot_longer(
+    cols         = starts_with("participant_move_r"),
+    names_to     = "round",
+    names_prefix = "participant_move_r",
+    values_to    = "move"
+  ) %>%
+  mutate(round = as.integer(round)) %>%
+  arrange(id, round)
+
+# 2) Compute per‐subject p_i^C and p_i^D
+cond_stats <- long_moves %>%
+  group_by(id, group_num) %>%
+  mutate(prev_move = lag(move)) %>%
+  filter(!is.na(prev_move)) %>%
+  summarise(
+    p_i_C = if (sum(prev_move == "A") > 0)
+      sum(prev_move == "A" & move == "A") / sum(prev_move == "A")
+    else NA_real_,
+    p_i_D = if (sum(prev_move == "B") > 0)
+      sum(prev_move == "B" & move == "A") / sum(prev_move == "B")
+    else NA_real_,
+    .groups = "drop"
+  )
+
+# 3) Student’s t‐test (equal variances) on p_i^C
+cat("=== stay‑cooperate (p_i^C) by group — Student's t‑test ===\n")
+valid_C <- cond_stats %>% filter(!is.na(p_i_C))
+print(table(valid_C$group_num))
+if (n_distinct(valid_C$group_num) == 2) {
+  tt_C_student <- t.test(p_i_C ~ group_num,
+                         data     = valid_C,
+                         var.equal = TRUE)
+  print(tt_C_student)
+} else {
+  cat("Cannot run Student’s t‑test for p_i^C: one group has no data.\n")
+}
+
+# 4) Student’s t‐test (equal variances) on p_i^D
+cat("\n=== switch‑to‑cooperate (p_i^D) by group — Student's t‑test ===\n")
+valid_D <- cond_stats %>% filter(!is.na(p_i_D))
+print(table(valid_D$group_num))
+if (n_distinct(valid_D$group_num) == 2) {
+  tt_D_student <- t.test(p_i_D ~ group_num,
+                         data      = valid_D,
+                         var.equal = TRUE)
+  print(tt_D_student)
+} else {
+  cat("Cannot run Student’s t‑test for p_i^D: one group has no data.\n")
+}
