@@ -311,3 +311,71 @@ ggsave(
 
 cat("Percentage‑stacked plot saved to:",
     file.path(dirname(output_file_path), "message_stackplot_pct.png"), "\n")
+
+# ---- 5) Line plot of cooperation rate by group ----
+
+# Pivot participant moves to long form
+coop_long <- combined_participants_data %>%
+  select(id, group_num, starts_with("participant_move_r")) %>%
+  pivot_longer(
+    cols         = starts_with("participant_move_r"),
+    names_to     = "round",
+    names_prefix = "participant_move_r",
+    values_to    = "move"
+  ) %>%
+  mutate(round = as.integer(round))
+
+# Compute percent cooperation by group and round
+coop_rates <- coop_long %>%
+  group_by(group_num, round) %>%
+  summarise(
+    percent_coop = mean(move == "A", na.rm = TRUE) * 100,
+    .groups = "drop"
+  )
+
+# Define colors and shapes
+group_colors <- c("0" = "#313695", "1" = "#A50026")  # blue for no_com_bot, red for com_bot
+group_shapes <- c("0" = 16,         "1" = 17)        # circle vs triangle
+
+# Build the line plot
+p2 <- ggplot(coop_rates, aes(x = round, y = percent_coop,
+                             color = factor(group_num),
+                             shape = factor(group_num))) +
+  geom_line(size = 1) +
+  geom_point(size = 3) +
+  scale_color_manual(
+    name   = "Group",
+    labels = c("No communication", "Communication"),
+    values = group_colors
+  ) +
+  scale_shape_manual(
+    name   = "Group",
+    labels = c("No communication", "Communication"),
+    values = group_shapes
+  ) +
+  scale_x_continuous(breaks = seq(0, 30, by = 5)) +
+  scale_y_continuous(
+    labels = label_percent(scale = 1),
+    limits = c(0, 100),
+    expand = expansion(mult = c(0, 0.02))
+  ) +
+  labs(
+    title = "Cooperation Rate Over 30 Rounds by Group",
+    x     = "Round",
+    y     = "% Cooperate"
+  ) +
+  theme_bw(base_size = 14) +
+  theme(
+    panel.grid.minor    = element_blank(),
+    panel.grid.major    = element_line(color = "grey80"),
+    panel.background    = element_rect(fill = "white", colour = NA),
+    plot.background     = element_rect(fill = "white", colour = NA),
+    legend.position     = "right",
+    aspect.ratio        = 0.6
+  )
+
+# Save the plot alongside the CSV
+img2_path <- file.path(dirname(output_file_path), "coop_rate_by_group.png")
+ggsave(img2_path, plot = p2, width = 10, height = 6, dpi = 300)
+
+cat("Cooperation‐rate line plot saved to:", img2_path, "\n")
