@@ -43,7 +43,7 @@ This experiment investigates how communication affects cooperative behavior in a
 - `data_analysis/`
   - `code_data_analysis.R`  
     R script for analyzing the experimental data.
-  - `data_/`  
+  - `raw_data/`  
     Folder containing all the raw data files.
   - `combined_participants_data.csv`  
     Cleaned and combined participant data for analysis.
