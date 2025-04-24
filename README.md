@@ -6,7 +6,7 @@ This repository contains the code and data for an online experiment studying hum
 
 ## The Experiment
 
-This experiment investigates how communication affects cooperative behavior in an iterative Prisoner’s Dilemma game. Participants play 30 rounds against a bot implementing the Tit-for-Tat strategy, with some participants able to communicate with the bot through pre-defined messages.
+This experiment investigates how non-binding communication affects cooperative behavior in a pairwise Iterative Prisoner’s Dilemma game. Participants play 30 rounds against a bot implementing the Tit-for-Tat strategy, with some participants able to communicate with the bot through pre-written messages. The bot's identity is shared to participants at the beginning of the experiment. 
 
 ---
 
