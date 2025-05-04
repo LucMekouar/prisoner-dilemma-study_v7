@@ -6,7 +6,7 @@ library(scales)
 library(RColorBrewer)
 
 # Define the folder path
-folder_path <- "/Users/lucmacbookpro-profile/Desktop/y3 project research/prisoner-dilemma-study_v7/data_analysis/data_2"
+folder_path <- "/Users/lucmacbookpro-profile/Desktop/y3 project research/prisoner-dilemma-study_v7/data_analysis/raw_data"
 
 # Initialize an empty list to store participant data
 all_participants_data <- list()
@@ -161,7 +161,8 @@ for (s in names(score_dist)) {
 output_file_path <- "/Users/lucmacbookpro-profile/Desktop/y3 project research/prisoner-dilemma-study_v7/data_analysis/combined_participants_data.csv"
 write_csv(combined_participants_data, output_file_path)
 
-# t-tests for proportion of cooperation given previous round was cooperation/defection between the two conditions
+
+# ---- t-tests for proportion of cooperation given previous round was cooperation/defection between the two conditions ----
 # 1) Pivot to long once more
 long_moves <- combined_participants_data %>%
   select(id, group_num, starts_with("participant_move_r")) %>%
@@ -214,6 +215,8 @@ if (n_distinct(valid_D$group_num) == 2) {
 } else {
   cat("Cannot run Student’s t‑test for p_i^D: one group has no data.\n")
 }
+
+
 
 # ---- full stacked‐area plot generation (most→least cooperation) ----
 # 1) Define messages least→most cooperative
@@ -312,7 +315,9 @@ ggsave(
 cat("Percentage‑stacked plot saved to:",
     file.path(dirname(output_file_path), "message_stackplot_pct.png"), "\n")
 
-# ---- 5) Line plot of cooperation rate by group ----
+
+
+# ---- Line plot of cooperation rate by group ----
 
 # Pivot participant moves to long form
 coop_long <- combined_participants_data %>%
@@ -379,3 +384,181 @@ img2_path <- file.path(dirname(output_file_path), "coop_rate_by_group.png")
 ggsave(img2_path, plot = p2, width = 10, height = 6, dpi = 300)
 
 cat("Cooperation‐rate line plot saved to:", img2_path, "\n")
+
+
+
+# ---- mean cooperation between the two group, split the 30 rounds in 3 sets of 10 consecutive rounds ----
+
+phase_stats <- coop_long %>%
+  mutate(phase = case_when(
+    round <= 10             ~ "first10",
+    round >= 11 & round <= 20 ~ "mid10",
+    TRUE                    ~ "last10"
+  )) %>%
+  group_by(id, group_num, phase) %>%
+  summarise(
+    mean_coop = mean(move == "A", na.rm = TRUE),
+    .groups = "drop"
+  )
+
+# loop over phases to run t-tests
+for (ph in c("first10", "mid10", "last10")) {
+  cat("\n=== Mean cooperation in", ph, "by group — t-test ===\n")
+  data_ph <- filter(phase_stats, phase == ph)
+  print(table(data_ph$group_num))
+  tt <- t.test(mean_coop ~ group_num,
+               data     = data_ph,
+               var.equal = TRUE)
+  print(tt)
+}
+
+
+
+# ---- mean cooperation between the two group, split the 30 rounds in 2 sets of 15 consecutive rounds ----
+
+first_last_stats <- coop_long %>%
+  mutate(phase = ifelse(round <= 15, "first15", "last15")) %>%
+  group_by(id, group_num, phase) %>%
+  summarise(mean_coop = mean(move == "A", na.rm = TRUE),
+            .groups = "drop")
+
+# Split out
+first15_stats <- filter(first_last_stats, phase == "first15")
+last15_stats  <- filter(first_last_stats, phase == "last15")
+
+cat("\n=== Mean cooperation in rounds 1–15 by group — t-test ===\n")
+print(table(first15_stats$group_num))
+tt_first15 <- t.test(mean_coop ~ group_num,
+                     data     = first15_stats,
+                     var.equal = TRUE)
+print(tt_first15)
+
+cat("\n=== Mean cooperation in rounds 16–30 by group — t-test ===\n")
+print(table(last15_stats$group_num))
+tt_last15 <- t.test(mean_coop ~ group_num,
+                    data     = last15_stats,
+                    var.equal = TRUE)
+print(tt_last15)
+
+
+# ---- Dual Correlation Analyses & Plots ----
+
+# A) Participant-level correlation -----------------------
+
+# 1) Compute each participant’s overall ask_rate & coop_rate
+comm_rates <- combined_participants_data %>%
+  filter(group_num == 1) %>%
+  rowwise() %>%
+  mutate(
+    ask_rate  = mean(c_across(starts_with("message_coop_score_r")) == 6, na.rm = TRUE),
+    coop_rate = mean(c_across(starts_with("participant_move_r")) == "A", na.rm = TRUE)
+  ) %>%
+  ungroup() %>%
+  select(id, ask_rate, coop_rate)
+
+# 2) Scatter + regression line
+p_part <- ggplot(comm_rates, aes(x = ask_rate, y = coop_rate)) +
+  geom_point(size = 3, alpha = 0.7) +
+  geom_smooth(method = "lm", se = TRUE) +
+  scale_x_continuous(
+    name   = "Participant Ask Rate\n(% of rounds saying “Let’s cooperate!”)",
+    labels = scales::percent_format(1),
+    limits = c(0, 1)
+  ) +
+  scale_y_continuous(
+    name   = "Participant Cooperation Rate\n(% of rounds cooperating)",
+    labels = scales::percent_format(1),
+    limits = c(0, 1)
+  ) +
+  labs(title = "Participant-Level: Ask vs. Cooperation Rates") +
+  theme_bw(base_size = 14) +
+  theme(legend.position = "none")
+
+# 3) Save
+ggsave(
+  filename = file.path(dirname(output_file_path), "participant_level_ask_vs_coop.png"),
+  plot     = p_part,
+  width    = 6, height = 6, dpi = 300
+)
+cat("Saved participant-level scatter to participant_level_ask_vs_coop.png\n")
+
+# 4) Correlation test
+cor_part <- cor.test(comm_rates$ask_rate, comm_rates$coop_rate)
+print(cor_part)
+
+
+# B) Round-level correlation -----------------------------
+
+# 1) Build trial-level long_comm if you haven’t already
+#    (id, round, ask = 1 if “Let’s cooperate!”, cooperate = 1 if move == "A")
+long_comm <- combined_participants_data %>%
+  filter(group_num == 1) %>%
+  pivot_longer(
+    cols         = starts_with("participant_move_r"),
+    names_to     = "round",
+    names_prefix = "participant_move_r",
+    values_to    = "move"
+  ) %>%
+  mutate(
+    round     = as.integer(round),
+    cooperate = as.integer(move == "A")
+  ) %>%
+  select(id, round, cooperate) %>%
+  left_join(
+    combined_participants_data %>%
+      filter(group_num == 1) %>%
+      pivot_longer(
+        cols         = starts_with("message_coop_score_r"),
+        names_to     = "round",
+        names_prefix = "message_coop_score_r",
+        values_to    = "score"
+      ) %>%
+      mutate(
+        round = as.integer(round),
+        ask   = as.integer(score == 6)
+      ) %>%
+      select(id, round, ask),
+    by = c("id", "round")
+  )
+
+# 2) Compute per-round average rates
+round_rates <- long_comm %>%
+  group_by(round) %>%
+  summarise(
+    ask_rate  = mean(ask,       na.rm = TRUE),
+    coop_rate = mean(cooperate, na.rm = TRUE),
+    .groups   = "drop"
+  )
+
+# 3) Scatter + regression line
+p_round <- ggplot(round_rates, aes(x = ask_rate, y = coop_rate)) +
+  geom_point(size = 3, alpha = 0.7) +
+  geom_smooth(method = "lm", se = TRUE) +
+  scale_x_continuous(
+    name   = "Round-Level Ask Rate\n(avg. % saying “Let’s cooperate!”)",
+    labels = scales::percent_format(1),
+    limits = c(0, 1)
+  ) +
+  scale_y_continuous(
+    name   = "Round-Level Cooperation Rate\n(avg. % cooperating)",
+    labels = scales::percent_format(1),
+    limits = c(0, 1)
+  ) +
+  labs(title = "Round-Level: Ask vs. Cooperation Rates") +
+  theme_bw(base_size = 14) +
+  theme(legend.position = "none")
+
+# 4) Save
+ggsave(
+  filename = file.path(dirname(output_file_path), "round_level_ask_vs_coop.png"),
+  plot     = p_round,
+  width    = 6, height = 6, dpi = 300
+)
+cat("Saved round-level scatter to round_level_ask_vs_coop.png\n")
+
+# 5) Correlation test
+cor_round <- cor.test(round_rates$ask_rate, round_rates$coop_rate)
+print(cor_round)
+
+
+
