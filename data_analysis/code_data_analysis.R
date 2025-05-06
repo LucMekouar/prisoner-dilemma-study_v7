@@ -2,7 +2,7 @@
 library(tidyverse)
 library(dplyr)
 library(ggplot2)
-library(scales) 
+library(scales)
 library(RColorBrewer)
 
 # Define the folder path
@@ -27,7 +27,7 @@ for (file_name in list.files(folder_path, pattern = "\\.csv$", full.names = TRUE
     group_num    <- ifelse(group == "communication_bot", 1, 0)
     total_payoff <- sum(data$participant_payoff, na.rm = TRUE)
     
-    # Extract non‑practice rounds 1–30
+    # Extract non-practice rounds 1–30
     moves_data <- data %>%
       filter(!isPractice, !is.na(participant_move), participant_move != "") %>%
       select(round, participant_move, bot_move, matrix_number)
@@ -46,7 +46,7 @@ for (file_name in list.files(folder_path, pattern = "\\.csv$", full.names = TRUE
       paste0("matrix_number_r", moves_data$round)
     )
     
-    # Build 30‑round message vector via row indices: row = 16 + 3*round
+    # Build 30-round message vector via row indices: row = 16 + 3*round
     message_vector <- setNames(rep("", 30), paste0("message_r", 1:30))
     if (group_num == 1) {
       for (r in moves_data$round) {
@@ -56,7 +56,7 @@ for (file_name in list.files(folder_path, pattern = "\\.csv$", full.names = TRUE
       }
     }
     
-    # Build 30‑round message_coop_score vector (NA or mapped score)
+    # Build 30-round message_coop_score vector (NA or mapped score)
     score_map <- c(
       "Let's cooperate!"                                                          = 6,
       "I think we should cooperate to improve both our earnings."                 = 5,
@@ -161,7 +161,6 @@ for (s in names(score_dist)) {
 output_file_path <- "/Users/lucmacbookpro-profile/Desktop/y3 project research/prisoner-dilemma-study_v7/data_analysis/combined_participants_data.csv"
 write_csv(combined_participants_data, output_file_path)
 
-
 # ---- t-tests for proportion of cooperation given previous round was cooperation/defection between the two conditions ----
 # 1) Pivot to long once more
 long_moves <- combined_participants_data %>%
@@ -191,7 +190,7 @@ cond_stats <- long_moves %>%
   )
 
 # 3) Student’s t‐test (equal variances) on p_i^C
-cat("=== stay‑cooperate (p_i^C) by group — Student's t‑test ===\n")
+cat("=== stay-cooperate (p_i^C) by group — Student's t-test ===\n")
 valid_C <- cond_stats %>% filter(!is.na(p_i_C))
 print(table(valid_C$group_num))
 if (n_distinct(valid_C$group_num) == 2) {
@@ -200,11 +199,11 @@ if (n_distinct(valid_C$group_num) == 2) {
                          var.equal = TRUE)
   print(tt_C_student)
 } else {
-  cat("Cannot run Student’s t‑test for p_i^C: one group has no data.\n")
+  cat("Cannot run Student’s t-test for p_i^C: one group has no data.\n")
 }
 
 # 4) Student’s t‐test (equal variances) on p_i^D
-cat("\n=== switch‑to‑cooperate (p_i^D) by group — Student's t‑test ===\n")
+cat("\n=== switch-to-cooperate (p_i^D) by group — Student's t-test ===\n")
 valid_D <- cond_stats %>% filter(!is.na(p_i_D))
 print(table(valid_D$group_num))
 if (n_distinct(valid_D$group_num) == 2) {
@@ -213,10 +212,8 @@ if (n_distinct(valid_D$group_num) == 2) {
                          var.equal = TRUE)
   print(tt_D_student)
 } else {
-  cat("Cannot run Student’s t‑test for p_i^D: one group has no data.\n")
+  cat("Cannot run Student’s t-test for p_i^D: one group has no data.\n")
 }
-
-
 
 # ---- full stacked‐area plot generation (most→least cooperation) ----
 # 1) Define messages least→most cooperative
@@ -277,7 +274,7 @@ p <- ggplot(stacked_pct, aes(x = round)) +
               color = "grey20", alpha = 0.7) +
   scale_x_continuous(breaks = seq(0, 30, by = 5)) +
   scale_y_continuous(
-    labels = label_percent(scale = 1),    # 0–100 → "0%", "50%", "100%"
+    labels = label_percent(scale = 1),
     expand = expansion(mult = c(0, .02))
   ) +
   scale_fill_manual(
@@ -285,7 +282,7 @@ p <- ggplot(stacked_pct, aes(x = round)) +
     breaks = message_levels_asc,
     guide  = guide_legend(
       title   = "Message",
-      reverse = TRUE    # legend top = "Let's cooperate!"
+      reverse = TRUE
     )
   ) +
   labs(
@@ -312,10 +309,8 @@ ggsave(
   dpi      = 300
 )
 
-cat("Percentage‑stacked plot saved to:",
+cat("Percentage-stacked plot saved to:",
     file.path(dirname(output_file_path), "message_stackplot_pct.png"), "\n")
-
-
 
 # ---- Line plot of cooperation rate by group ----
 
@@ -339,8 +334,8 @@ coop_rates <- coop_long %>%
   )
 
 # Define colors and shapes
-group_colors <- c("0" = "#313695", "1" = "#A50026")  # blue for no_com_bot, red for com_bot
-group_shapes <- c("0" = 16,         "1" = 17)        # circle vs triangle
+group_colors <- c("0" = "#313695", "1" = "#A50026")
+group_shapes <- c("0" = 16,         "1" = 17)
 
 # Build the line plot
 p2 <- ggplot(coop_rates, aes(x = round, y = percent_coop,
@@ -385,20 +380,18 @@ ggsave(img2_path, plot = p2, width = 10, height = 6, dpi = 300)
 
 cat("Cooperation‐rate line plot saved to:", img2_path, "\n")
 
-
-
 # ---- mean cooperation between the two group, split the 30 rounds in 3 sets of 10 consecutive rounds ----
 
 phase_stats <- coop_long %>%
   mutate(phase = case_when(
-    round <= 10             ~ "first10",
+    round <= 10              ~ "first10",
     round >= 11 & round <= 20 ~ "mid10",
-    TRUE                    ~ "last10"
+    TRUE                     ~ "last10"
   )) %>%
   group_by(id, group_num, phase) %>%
   summarise(
     mean_coop = mean(move == "A", na.rm = TRUE),
-    .groups = "drop"
+    .groups   = "drop"
   )
 
 # loop over phases to run t-tests
@@ -407,20 +400,20 @@ for (ph in c("first10", "mid10", "last10")) {
   data_ph <- filter(phase_stats, phase == ph)
   print(table(data_ph$group_num))
   tt <- t.test(mean_coop ~ group_num,
-               data     = data_ph,
+               data      = data_ph,
                var.equal = TRUE)
   print(tt)
 }
-
-
 
 # ---- mean cooperation between the two group, split the 30 rounds in 2 sets of 15 consecutive rounds ----
 
 first_last_stats <- coop_long %>%
   mutate(phase = ifelse(round <= 15, "first15", "last15")) %>%
   group_by(id, group_num, phase) %>%
-  summarise(mean_coop = mean(move == "A", na.rm = TRUE),
-            .groups = "drop")
+  summarise(
+    mean_coop = mean(move == "A", na.rm = TRUE),
+    .groups   = "drop"
+  )
 
 # Split out
 first15_stats <- filter(first_last_stats, phase == "first15")
@@ -429,17 +422,16 @@ last15_stats  <- filter(first_last_stats, phase == "last15")
 cat("\n=== Mean cooperation in rounds 1–15 by group — t-test ===\n")
 print(table(first15_stats$group_num))
 tt_first15 <- t.test(mean_coop ~ group_num,
-                     data     = first15_stats,
+                     data      = first15_stats,
                      var.equal = TRUE)
 print(tt_first15)
 
 cat("\n=== Mean cooperation in rounds 16–30 by group — t-test ===\n")
 print(table(last15_stats$group_num))
 tt_last15 <- t.test(mean_coop ~ group_num,
-                    data     = last15_stats,
+                    data      = last15_stats,
                     var.equal = TRUE)
 print(tt_last15)
-
 
 # ---- Dual Correlation Analyses & Plots ----
 
@@ -486,11 +478,9 @@ cat("Saved participant-level scatter to participant_level_ask_vs_coop.png\n")
 cor_part <- cor.test(comm_rates$ask_rate, comm_rates$coop_rate)
 print(cor_part)
 
-
 # B) Round-level correlation -----------------------------
 
 # 1) Build trial-level long_comm if you haven’t already
-#    (id, round, ask = 1 if “Let’s cooperate!”, cooperate = 1 if move == "A")
 long_comm <- combined_participants_data %>%
   filter(group_num == 1) %>%
   pivot_longer(
@@ -560,5 +550,54 @@ cat("Saved round-level scatter to round_level_ask_vs_coop.png\n")
 cor_round <- cor.test(round_rates$ask_rate, round_rates$coop_rate)
 print(cor_round)
 
+# ---- Bar chart of overall mean cooperation by group ----
 
+# 1) Compute overall mean cooperation, variance, and 95% CI for each group
+summary_all <- coop_long %>%
+  group_by(group_num) %>%
+  summarise(
+    mean_coop = mean(move == "A", na.rm = TRUE) * 100,
+    var_coop  = var(as.numeric(move == "A"), na.rm = TRUE) * 100,
+    n         = n(),
+    sd        = sd(as.numeric(move == "A"), na.rm = TRUE) * 100,
+    se        = sd / sqrt(n),
+    ci        = qt(0.975, df = n - 1) * se,
+    .groups   = "drop"
+  ) %>%
+  mutate(
+    group_label = ifelse(group_num == 1, "Communication", "No communication")
+  )
 
+# Print your descriptive statistics
+print(summary_all)
+
+# 2) Build the bar plot
+p_bar <- ggplot(summary_all, aes(x = group_label, y = mean_coop, fill = factor(group_num))) +
+  geom_bar(stat = "identity", width = 0.6) +
+  geom_errorbar(aes(ymin = mean_coop - ci, ymax = mean_coop + ci),
+                width = 0.2, size = 0.8) +
+  scale_fill_manual(values = group_colors, guide = FALSE) +
+  scale_y_continuous(
+    labels = label_percent(scale = 1),
+    limits = c(0, 100),
+    expand = expansion(mult = c(0, 0.02))
+  ) +
+  labs(
+    title = "Mean Cooperation Over 30 Rounds by Group",
+    x     = "Group",
+    y     = "% Cooperation"
+  ) +
+  theme_bw(base_size = 14) +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_line(color = "grey80"),
+    panel.background = element_rect(fill = "white", colour = NA),
+    plot.background  = element_rect(fill = "white", colour = NA),
+    aspect.ratio     = 0.6
+  )
+
+# 3) Save the bar chart alongside your other figures
+bar_path <- file.path(dirname(output_file_path), "mean_coop_bar.png")
+ggsave(filename = bar_path, plot = p_bar, width = 6, height = 6, dpi = 300)
+
+cat("Bar chart of mean cooperation saved to:", bar_path, "\n")
