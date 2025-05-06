@@ -1,6 +1,6 @@
 ## This Repository
 
-This repository contains the code and data for an online experiment studying human cooperative behavior in human-machine interactions using the iterative Prisoner’s Dilemma game. The experiment is built using **jsPsych** and runs in participants’ web browsers, hosted on Pavlovia.
+This repository contains the code, supplementary material and data for an online experiment studying human cooperative behavior in human-machine interactions using the iterative Prisoner’s Dilemma game. The experiment is built using **jsPsych** and runs in participants’ web browsers, hosted on Pavlovia.
 
 ---
 
@@ -47,3 +47,8 @@ This experiment investigates how non-binding communication affects cooperative b
     Folder containing all the raw data files.
   - `combined_participants_data.csv`  
     Cleaned and combined participant data for analysis.
+
+- `data_analysis/`
+  - `Participant_Information_Leaflet.pdf`
+  - `Debrief_Form.pdf`  
+
