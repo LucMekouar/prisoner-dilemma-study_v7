@@ -48,7 +48,7 @@ This experiment investigates how non-binding communication affects cooperative b
   - `combined_participants_data.csv`  
     Cleaned and combined participant data for analysis.
 
-- `data_analysis/`
+- `supplementary_material/`
   - `Participant_Information_Leaflet.pdf`
   - `Debrief_Form.pdf`  
 
