@@ -601,3 +601,15 @@ bar_path <- file.path(dirname(output_file_path), "mean_coop_bar.png")
 ggsave(filename = bar_path, plot = p_bar, width = 6, height = 6, dpi = 300)
 
 cat("Bar chart of mean cooperation saved to:", bar_path, "\n")
+
+
+# 1) Per‐participant overall cooperation
+overall_stats <- coop_long %>%
+  group_by(id, group_num) %>%
+  summarise(mean_coop = mean(move == "A"), .groups = "drop")
+
+# 2) Student’s t‐test (equal variances) on overall mean_coop
+tt_all30 <- t.test(mean_coop ~ group_num,
+                   data      = overall_stats,
+                   var.equal = TRUE)
+print(tt_all30)
